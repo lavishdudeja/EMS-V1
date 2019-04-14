@@ -23,17 +23,13 @@ import { LayoutModule } from 'app/layout/layout.module';
 const appRoutes: Routes = [
     {
         path        : 'apps',
-        loadChildren: './main/apps/apps.module#AppsModule'
+        loadChildren: './main/apps.module#AppsModule'
     },
     {
         path        : 'pages',
         loadChildren: './main/pages/pages.module#PagesModule'
     },
-    {
-        path        : 'ui',
-        loadChildren: './main/ui/ui.module#UIModule'
-    },
-   
+    
     {
         path      : '**',
         redirectTo: 'apps/dashboards/analytics'
@@ -67,7 +63,7 @@ const appRoutes: Routes = [
         FuseModule.forRoot(fuseConfig), 
         FuseSharedModule,
         FuseSidebarModule,
-FuseProgressBarModule,
+        FuseProgressBarModule,
         // App modules
         LayoutModule
     ],

@@ -19,7 +19,7 @@ export const navigation: FuseNavigation[] = [
                         id   : 'analytics',
                         title: 'Analytics',
                         type : 'item',
-                        url  : '/apps/dashboards/analytics'
+                        url  : '/dashboards/analytics'
                     }
                 ]
             },
@@ -33,13 +33,27 @@ export const navigation: FuseNavigation[] = [
             },
             {
                 id       : 'contacts',
-                title    : 'Contacts',
+                title    : 'Employee List',
                 translate: 'NAV.CONTACTS',
                 type     : 'item',
                 icon     : 'account_box',
                 url      : '/apps/contacts'
             },
-            
+           
+            {
+                id   : 'profile',
+                title: 'Employee Profile',
+                type : 'item',
+                icon : 'person',
+                url  : '/apps/profile'
+            },
+            {
+                id   : 'forms',
+                title: 'Update Profile',
+                type : 'item',
+                icon : 'web_asset',
+                url  : '/apps/forms'
+            }
         ]
     },
     {
@@ -105,29 +119,6 @@ export const navigation: FuseNavigation[] = [
                         url  : '/pages/invoices/compact'
                     }
                 ]
-            },
-           
-            {
-                id   : 'profile',
-                title: 'Profile',
-                type : 'item',
-                icon : 'person',
-                url  : '/pages/profile'
-            }
-        ]
-    },
-    {
-        id      : 'user-interface',
-        title   : 'User Interface',
-        type    : 'group',
-        icon    : 'web',
-        children: [
-            {
-                id   : 'forms',
-                title: 'Forms',
-                type : 'item',
-                icon : 'web_asset',
-                url  : '/ui/forms'
             }
         ]
     }

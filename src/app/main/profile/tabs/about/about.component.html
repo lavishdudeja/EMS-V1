@@ -1,0 +1,196 @@
+<div id="about" class="p-24" fxLayout="row wrap">
+
+    <div class="about-content" fxLayout="column" fxFlex="100" fxFlex.gt-sm="50" fxFlex.gt-md="65">
+
+        <div class="profile-box info-box general" fxLayout="column">
+
+            <header class="mat-accent-bg">
+                <div class="title">General Information</div>
+            </header>
+
+            <div class="content">
+                <div class="info-line">
+                    <div class="title">Full Name</div>
+                    <div class="info">Ramesh Kumar</div>
+                </div>
+                <div class="info-line">
+                    <div class="title">Gender</div>
+                    <div class="info">Male</div>
+                </div>
+
+                <div class="info-line">
+                    <div class="title">Date of Birth</div>
+                    <div class="info">4/5/1987</div>
+                </div>
+
+                <div class="info-line">
+                    <div class="title">Date of Joining</div>
+                    <div class="info">12/1/2017</div>
+                </div>
+
+                <div class="info-line">
+                    <div class="title">Locations</div>
+                    <div class="info location" fxLayout="row" fxLayoutAlign="start center"
+                         *ngFor="let location of about.general.locations">
+                        <span>{{location}}</span>
+                        <mat-icon class="s-16 ml-4">location_on</mat-icon>
+                    </div>
+                </div>
+
+                
+            </div>
+
+        </div>
+
+        <div class="profile-box info-box general" fxLayout="column">
+
+                <header class="mat-accent-bg">
+                    <div class="title">Qualification</div>
+                </header>
+    
+                <div class="content">
+                    <div class="info-line">
+                        <div class="title">Graduation</div>
+                        <div class="info">BSC Chemistry</div>
+                    </div>
+                    <div class="info-line">
+                        <div class="title">Pass %age in Graduation</div>
+                        <div class="info">80%</div>
+                    </div>
+    
+                    <div class="info-line">
+                        <div class="title">Passing Date</div>
+                        <div class="info">4/5/2015</div>
+                    </div>
+    
+                    
+    
+                    </div>
+    
+            </div>
+
+        <div class="profile-box info-box work" fxLayout="column">
+
+            <header class="mat-accent-bg">
+                <div class="title">Work</div>
+            </header>
+
+            <div class="content">
+                <div class="info-line">
+                    <div class="title">Occupation</div>
+                    <div class="info">{{about.work.occupation}}</div>
+                </div>
+
+                <div class="info-line">
+                    <div class="title">Skills</div>
+                    <div class="info">{{about.work.skills}}</div>
+                </div>
+
+                <div class="info-line">
+                    <div class="title">Jobs</div>
+                    <table class="info jobs">
+                        <tr class="job" *ngFor="let job of about.work.jobs">
+                            <td class="company">{{job.company}}</td>
+                            <td class="date">{{job.date}}</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </div>
+
+        
+
+    </div>
+
+    <div class="about-sidebar" fxLayout="column" fxFlex="100" fxFlex.gt-sm="50" fxFlex.gt-md="35">
+
+            <div class="profile-box info-box contact" fxLayout="column">
+
+                    <header class="mat-accent-bg">
+                        <div class="title">Vocational Education Detail</div>
+                    </header>
+        
+                    <div class="content">
+                        <div class="info-line">
+                            <div class="title">Vocational Training Provider</div>
+                            <div class="info">Laqsh</div>
+                        </div>
+                        <div class="info-line">
+                            <div class="title">Trade</div>
+                            <div class="info" >Automotive</div>
+                        </div>
+                                               
+                        <div class="info-line">
+                            <div class="title">School Name</div>
+                            <div class="info">
+                                GSSS Police line, Ambala
+                            </div>
+                        </div>
+
+                        <div class="info-line">
+                                <div class="title">Skill Cordinator Name</div>
+                                <div class="info">
+                                    R.P Verma
+                                </div>
+                        </div>
+                    </div>
+             </div>
+             
+             <div class="profile-box info-box contact" fxLayout="column">
+
+                    <header class="mat-accent-bg">
+                        <div class="title">Contact</div>
+                    </header>
+        
+                    <div class="content">
+                        <div class="info-line">
+                            <div class="title">Address</div>
+                            <div class="info">{{about.contact.address}}</div>
+                        </div>
+                        <div class="info-line">
+                            <div class="title">Tel.</div>
+                            <div class="info" *ngFor="let tel of about.contact.tel">
+                                <span>{{tel}}</span>
+                            </div>
+                        </div>
+                       
+                        <div class="info-line">
+                            <div class="title">Emails</div>
+                            <div class="info" *ngFor="let email of about.contact.emails">
+                                <span>{{email}}</span>
+                            </div>
+                        </div>
+                    </div>
+        
+                </div>
+
+
+                <div class="profile-box info-box contact" fxLayout="column">
+
+                    <header class="mat-accent-bg">
+                        <div class="title">Documment Uploaded</div>
+                    </header>
+        
+                    <div class="content">
+                        <div class="info-line">
+                            <div class="title">Qualification</div>
+                            <div class="info">Uploaded</div>
+                        </div>
+                        <div class="info-line">
+                            <div class="title">Experience</div>
+                            <div class="info"> Updloaded
+                            </div>
+                        </div>
+                       
+                        <div class="info-line">
+                            <div class="title">Address</div>
+                            <div class="info">Not Uploaded</div>
+                        </div>
+                    </div>
+        
+                </div>
+        
+
+    </div>
+
+</div>

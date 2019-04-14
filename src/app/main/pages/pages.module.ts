@@ -8,7 +8,7 @@ import { ResetPasswordModule } from 'app/main/pages/authentication/reset-passwor
 import { ResetPassword2Module } from 'app/main/pages/authentication/reset-password-2/reset-password-2.module';
 import { LockModule } from 'app/main/pages/authentication/lock/lock.module';
 import { InvoiceCompactModule } from 'app/main/pages/invoices/compact/compact.module';
-import { ProfileModule } from 'app/main/pages/profile/profile.module';
+
 
 @NgModule({
     imports: [
@@ -22,8 +22,7 @@ import { ProfileModule } from 'app/main/pages/profile/profile.module';
 
         InvoiceCompactModule,
         // Profile
-        ProfileModule
-
+       
     ]
 })
 export class PagesModule
